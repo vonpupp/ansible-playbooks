@@ -1,0 +1,48 @@
+- name: install utilities
+  pacman: name={{ item }} state=present
+  with_items:
+  - base-devel
+  # XORG
+  - xorg-server
+  - xorg-server-utils
+  - xorg-xinit
+  - awesome
+  - xserver-xephyr 
+  - xscreensaver 
+  - slim 
+  - wmname 
+  # X11 APPS
+  - compton 
+  - feh 
+  - iceweasel 
+  - kbdd 
+  - keepassx 
+  - libreoffice 
+  - lilyterm 
+  - mkvtoolnix-gui 
+  - pcmanfm 
+  - qmmp 
+  - seahorse 
+  - shotwell
+  - udisks-glue 
+  - vlc 
+  - wicd-gtk
+  - wmctrl 
+  - xpdf 
+  - zathura 
+  - zathura-pdf-poppler 
+  sudo: true
+
+#i3-wm
+#i3status
+#dmenu
+#mesa-libgl
+#ttf-inconsolata
+#bdf-unifont
+#ttf-dejavu
+#ttf-freefont
+#ttf-bitstream-vera
+#ttf-liberation
+#xfce4-terminal
+#gtk-engines
+#gnome-keyring
